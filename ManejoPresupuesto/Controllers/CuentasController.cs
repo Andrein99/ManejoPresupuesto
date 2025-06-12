@@ -82,8 +82,8 @@ namespace ManejoPresupuesto.Controllers
                 Id = cuenta.Id,
                 Nombre = cuenta.Nombre,
                 TipoCuentaId = cuenta.TipoCuentaId,
-                Balance = cuenta.Balance,
-                Descripcion = cuenta.Descripcion
+                Descripcion = cuenta.Descripcion,
+                Balance = cuenta.Balance
             };
 
             modelo.TiposCuentas = await ObtenerTiposCuentas(usuarioId);
