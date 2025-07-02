@@ -5,11 +5,11 @@
 	@if (SignInManager.IsSignedIn(User))
 	{
 		<li class="nav-item">
-			<span class="nav-link text-dark">Hola, @User.Identity.Name</span>
+			<span class="nav-link text-dark">Hola, <strong>@User.Identity.Name</strong></span>
 		</li>
 		<li class="nav-item">
 			<form class="form-inline" asp-action="logout" asp-controller="usuarios">
-				<button type="submit" class="nav-link btn btn-link text-dark">
+				<button type="submit" class="nav-link btn btn-link text-dark" style="color: red !important">
 					Logout
 				</button>
 			</form>
